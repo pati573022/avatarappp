@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarappp.FornecedorPage"
+             Title="Cadastro do Fornecedor">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
+                     
+            <Frame BorderColor="Black"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   Padding="10">
+                   
+                <StackLayout>
+
+                    <Label Text="Cadastro do Fornecedor"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="Nome:"
+                           FontAttributes="Bold"
+                           Margin="0,10,0,0"/>
+                           
+                    <Entry Placeholder="Digite o nome"
+                           BackgroundColor="#e0e0e0"
+                           HeightRequest="40"/>
+
+                    <Label Text="Telefone:"
+                           FontAttributes="Bold"
+                           Margin="0,10,0,0"/>
+                           
+                    <Entry Placeholder="Digite o telefone"
+                           BackgroundColor="#e0e0e0"
+                           HeightRequest="40"/>
+
+                    <Label Text="CNPJ:"
+                           FontAttributes="Bold"
+                           Margin="0,10,0,0"/>
+                           
+                    <Entry Placeholder="Digite o CNPJ"
+                           BackgroundColor="#e0e0e0"
+                           HeightRequest="40"/>
+
+                    <Label Text="Matéria Prima:"
+                           FontAttributes="Bold"
+                           Margin="0,10,0,0"/>
+                           
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Entry Placeholder="Tecidos"
+                               Grid.Column="0"
+                               BackgroundColor="#e0e0e0"
+                               HeightRequest="40" />
+                               
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Column="1"
+                                     VerticalOptions="Center">
+                            <ImageButton Source="recycle_bin_icon.png"
+                                         HeightRequest="32"
+                                         WidthRequest="32"
+                                         Margin="0,0,5,0"
+                                         Clicked="OnRemoveMaterialClicked" />
+                            <ImageButton Source="add_icon.png"
+                                         HeightRequest="32"
+                                         WidthRequest="32"
+                                         Clicked="OnAddMaterialClicked" />
+                        </StackLayout>
+                    </Grid>
+
+                    <Label Text="Quantidade:"
+                           FontAttributes="Bold"
+                           Margin="0,10,0,0"/>
+                           
+                    <Entry Placeholder="Digite a quantidade"
+                           BackgroundColor="#e0e0e0"
+                           HeightRequest="40"/>
+
+                    <Button Text="Cadastrar"
+                            Margin="0,20,0,0"
+                            BackgroundColor="#2196F3"
+                            TextColor="White"
+                            HeightRequest="40"
+                            CornerRadius="10"
+                            Clicked="OnRegisterButtonClicked" />
+
+                    <Grid Padding="0,10,0,0"
+                          HorizontalOptions="End">
+                          
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Source="recycle_bin_icon.png"
+                                     HeightRequest="32"
+                                     WidthRequest="32"
+                                     Grid.Column="0"
+                                     Margin="0,0,10,0"
+                                     Clicked="OnRecycleClicked" />
+                                     
+                        <ImageButton Source="refresh_icon.png"
+                                     HeightRequest="32"
+                                     WidthRequest="32"
+                                     Grid.Column="1"
+                                     Clicked="OnRefreshClicked" />
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
