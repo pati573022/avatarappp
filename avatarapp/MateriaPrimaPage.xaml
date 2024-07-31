@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeuNamespace.CadastroMateriaPrima"
+             Title="Cadastro de Matéria Prima">
+    <ContentPage.Content>
+        <Grid Padding="20" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Header -->
+            <Label Text="Cadastro de Matéria Prima"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Grid.Row="0"
+                   Margin="0,10,0,20"/>
+
+            <!-- Nome Field -->
+            <Label Text="Nome:"
+                   Grid.Row="1"
+                   VerticalOptions="Center"/>
+            <Entry Placeholder="Nome do produto"
+                   Grid.Row="1"
+                   Margin="0,0,0,10"
+                   BackgroundColor="#D3D3D3"/>
+
+            <!-- Unidade Field -->
+            <Label Text="Unidade do Produto:"
+                   Grid.Row="2"
+                   VerticalOptions="Center"/>
+            <Picker Title="Unidade:"
+                    Grid.Row="2"
+                    Margin="0,0,0,10"
+                    BackgroundColor="#D3D3D3">
+                <!-- Add Picker items here -->
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Unidade 1</x:String>
+                        <x:String>Unidade 2</x:String>
+                        <x:String>Unidade 3</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <!-- Buttons -->
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Grid.Row="3"
+                         Margin="0,10">
+                <Button Text="Salvar"
+                        BackgroundColor="#90EE90"
+                        TextColor="Black"
+                        WidthRequest="100"
+                        Margin="0,0,10,0"
+                        Clicked="OnSalvarClicked"/>
+
+                <Button Text="Cancelar"
+                        BackgroundColor="#FF6347"
+                        TextColor="Black"
+                        WidthRequest="100"
+                        Clicked="OnCancelarClicked"/>
+            </StackLayout>
+
+            <!-- Footer Icons -->
+            <Grid Grid.Row="4" VerticalOptions="End" Padding="0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <Image Source="trash_icon.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Image Source="refresh_icon.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Grid.Column="1"/>
+            </Grid>

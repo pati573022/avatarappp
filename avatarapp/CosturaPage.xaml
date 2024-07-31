@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.CosturaPage"
+             Title="Cadastro Costura">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+
+            <Label Text="Cadastro Costura" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Nome do Cliente:" />
+            <Picker x:Name="ClientePicker" Title="Selecione o Cliente" />
+
+            <Label Text="Produto:" />
+            <StackLayout Orientation="Horizontal">
+                <Picker x:Name="ProdutoPicker" Title="Selecione o Produto" HorizontalOptions="FillAndExpand" />
+                <Entry x:Name="ProdutoEntry" WidthRequest="50" />
+            </StackLayout>
+
+            <Label Text="Quantidade:" />
+            <Entry x:Name="QuantidadeEntry" Keyboard="Numeric" />
+
+            <Label Text="Entrada:" />
+            <DatePicker x:Name="EntradaDatePicker" />
+
+            <Label Text="Prazo:" />
+            <DatePicker x:Name="PrazoDatePicker" />
+
+            <Button Text="Cadastrar" Clicked="OnCadastrarClicked" BackgroundColor="LightBlue" />
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
