@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarClientePage"
+             Title="Buscar Cliente"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Buscar Cliente"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <StackLayout>
+                <Label Text="BUSCAR:" FontSize="14" />
+                <Grid ColumnDefinitions="*, Auto">
+                    <Entry x:Name="BuscarEntry" Placeholder="Digite o nome do cliente" />
+                    <Button Text="🔍" Grid.Column="1" Clicked="OnBuscarClicked" />
+                </Grid>
+            </StackLayout>
+
+            <!-- Result Fields -->
+            <StackLayout>
+                <Entry x:Name="Result1Entry" Placeholder="Resultado 1" IsReadOnly="True" />
+                <Entry x:Name="Result2Entry" Placeholder="Resultado 2" IsReadOnly="True" />
+                <Entry x:Name="Result3Entry" Placeholder="Resultado 3" IsReadOnly="True" />
+                <Entry x:Name="Result4Entry" Placeholder="Resultado 4" IsReadOnly="True" />
+                <Entry x:Name="Result5Entry" Placeholder="Resultado 5" IsReadOnly="True" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BordadoPage"
+             Title="Cadastro Bordado"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Cadastro Bordado"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Picker for Nome do Cliente -->
+            <StackLayout>
+                <Label Text="NOME DO CLIENTE:" FontSize="14" />
+                <Picker x:Name="NomeClientePicker" Title="Selecione o Cliente">
+                    <Picker.ItemsSource>
+                        <!-- Add client names here -->
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Cliente 1</x:String>
+                            <x:String>Cliente 2</x:String>
+                            <x:String>Cliente 3</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+            <!-- Picker for Produto -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="PRODUTO:" FontSize="14" VerticalOptions="Center" />
+                <Picker x:Name="ProdutoPicker" Title="Selecione o Produto" HorizontalOptions="FillAndExpand">
+                    <Picker.ItemsSource>
+                        <!-- Add product names here -->
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Produto 1</x:String>
+                            <x:String>Produto 2</x:String>
+                            <x:String>Produto 3</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <BoxView Color="Transparent" WidthRequest="10" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="QUANTIDADE:" FontSize="14" />
+                <Entry x:Name="QuantidadeEntry" Placeholder="Digite a quantidade" Keyboard="Numeric" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="ENTRADA:" FontSize="14" />
+                <Entry x:Name="EntradaEntry" Placeholder="Digite a data de entrada" Keyboard="Text" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="PRAZO:" FontSize="14" />
+                <Entry x:Name="PrazoEntry" Placeholder="Digite o prazo" Keyboard="Text" />
+            </StackLayout>
+
+            <Button Text="CADASTRAR"
+                    BackgroundColor="#3498db"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Clicked="OnCadastrarClicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.EstoquePage"
+             Title="Cadastro do Estoque"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Cadastro do Estoque"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <StackLayout>
+                <Label Text="DESCRIÇÃO DO PRODUTO:" FontSize="14" />
+                <Entry x:Name="DescricaoEntry" Placeholder="Digite a descrição do produto" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="FORNECEDOR:" FontSize="14" />
+                <Entry x:Name="FornecedorEntry" Placeholder="Digite o nome do fornecedor" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="QUANTIDADE:" FontSize="14" />
+                <Entry x:Name="QuantidadeEntry" Placeholder="Digite a quantidade" Keyboard="Numeric" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="PREÇO DE VENDA:" FontSize="14" />
+                <Entry x:Name="PrecoVendaEntry" Placeholder="Digite o preço de venda" Keyboard="Numeric" />
+            </StackLayout>
+
+            <Button Text="CADASTRAR"
+                    BackgroundColor="#3498db"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Clicked="OnCadastrarClicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
