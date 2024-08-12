@@ -3,64 +3,14 @@ namespace avatarapp.Modelos;
 public class Bordado : Registro
 {
 
-    string produto;
-    int id;
-    int quantidade;
-    string entrada;
-    string prazo;
+    public string produto {get;set;}
 
-    public string GetProduto()
-    {
-        return produto;
-    }
+    [BsonId]
+   public int id;
+   [BsonId]
+   public int quantidade {get;set;}
+   public string entrada {get;set;}
+     public string prazo {get;set;}
 
-    public void SetProduto(string produto)
-    {
-        this.produto = produto;
-
-    }
-
-
-    public void SetId(int id)
-    {
-        this.id = id;
-
-    }
-    public int GetId()
-    {
-        return id;
-    }
-
-
-    public int GetQuantidade()
-    {
-        return quantidade;
-    }
-
-    public void SetQuantidade(int quantidade)
-    {
-        this.quantidade = quantidade;
-    }
-
-    public string GetEntrada()
-    {
-        return produto;
-    }
-
-    public void SetEntrada(string entrada)
-    {
-        this.entrada = entrada;
-
-    }
-
-    public string GetPrazo()
-    {
-        return prazo;
-    }
-
-    public void SetPrazo(string prazo)
-    {
-        this.prazo= prazo;
-    }
 
 }
