@@ -1,5 +1,6 @@
-namespace avatarapp.Modelos;
+using LiteDB;
 
+namespace avatarapp;
 public class Costura : Registro
 {
 
@@ -8,9 +9,7 @@ public class Costura : Registro
      [BsonId]
    public int id {get;set;}
    public string produto {get;set;}
-
-   [BsonId]
-    public int quantidade {get;set;}
+  public int quantidade {get;set;}
    public string  entrada {get;set;}
    public string prazo {get;set;}
 

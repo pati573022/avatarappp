@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarFornecedorPage"
+             Title="Buscar Fornecedor">
+
+    <ContentPage.Content>
+        <Frame CornerRadius="20" Padding="20" BackgroundColor="White" HasShadow="True" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout Spacing="20">
+                <Label Text="Buscar Fornecedor" FontAttributes="Bold" FontSize="Title" HorizontalOptions="Center" />
+                
+                <Label Text="BUSCAR:" FontAttributes="Bold" />
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="SearchEntry" Placeholder="Digite o nome do fornecedor" />
+
+                    <ImageButton Source="search_icon.png" Grid.Column="1" Clicked="OnSearchButtonClicked" />
+                </Grid>
+
+                <!-- Botões de resultado -->
+                <Button Text="Resultado 1" Style="{StaticResource ButtonStyle}" />
+                <Button Text="Resultado 2" Style="{StaticResource ButtonStyle}" />
+                <Button Text="Resultado 3" Style="{StaticResource ButtonStyle}" />
+                <Button Text="Resultado 4" Style="{StaticResource ButtonStyle}" />
+                <Button Text="Resultado 5" Style="{StaticResource ButtonStyle}" />
+                <Button Text="Resultado 6" Style="{StaticResource ButtonStyle}" />
+                <Button Text="Resultado 7" Style="{StaticResource ButtonStyle}" />
+                <Button Text="Resultado 8" Style="{StaticResource ButtonStyle}" />
+
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

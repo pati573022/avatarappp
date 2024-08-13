@@ -1,4 +1,6 @@
-namespace avatarapp.Modelos;
+using LiteDB;
+
+namespace avatarapp;
 
 public class Corte : Registro
 {
@@ -7,8 +9,6 @@ public class Corte : Registro
 
     [BsonId]
    public int id {get;set;}
-
-    [BsonId]
    public int quantidade {get;set;}
    public string entrada {get;set;}
    public string prazo {get;set;}

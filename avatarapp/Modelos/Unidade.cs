@@ -1,4 +1,6 @@
-namespace avatarapp.Modelos;
+using LiteDB;
+
+namespace avatarapp;
 public class Unidade : Registro
 {
    public string nome {get;set;}
