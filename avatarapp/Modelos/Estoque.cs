@@ -1,6 +1,6 @@
 using LiteDB;
 
-namespace avatarapp;
+namespace avatarapp.Modelos;
 
 public class Estoque : Registro
 {
@@ -8,7 +8,7 @@ public class Estoque : Registro
     public int id {get;set;}
     public string descricaodoproduto {get;set;}
 
-    int quantidade {get;set;}
+   public string quantidade {get;set;}
    public string  fornecedor {get;set;}
     public string precodevenda {get;set;}
 

@@ -1,97 +1,57 @@
-<? xml version = "1.0" encoding = "utf-8" ?>
-< ContentPage xmlns = "http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns: x = "http://schemas.microsoft.com/winfx/2009/xaml"
-             x: Class = "avatarapp.ProdutoPage"
-             Title = "Cadastro do Produto" >
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourNamespace.CadastroProdutoPage">
 
-    < ContentPage.Content>
-        < ScrollView >
-            < StackLayout Padding = "30" Spacing = "20" BackgroundColor = "White">
+    <StackLayout Padding="20">
+        <Frame BackgroundColor="White" CornerRadius="20" HasShadow="True">
+            <StackLayout Padding="10">
 
+                <!-- Título -->
+                <Label Text="Cadastro do Produto"
+                       FontSize="Large"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
 
-                < !--Title-- >
-                < Label Text = "Cadastro do Produto"
-                       FontSize = "24"
-                       HorizontalOptions = "Center"/>
+                <!-- Nome do Produto -->
+                <Label Text="NOME:" VerticalOptions="Center" FontSize="Medium" />
+                <Entry Placeholder="Nome do produto" />
 
-                < !--Nome-- >
-                < Label Text = "Nome:"
-                       FontSize = "18" />
-                < Entry x: Name = "NomeEntry"
-                       Placeholder = "Digite o nome do produto"
-                       BackgroundColor = "#E0E0E0"
-                       HeightRequest = "40" />
+                <!-- Descrição do Produto -->
+                <Label Text="DESCRIÇÃO DO PRODUTO:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Entry Placeholder="Descrição do produto" />
 
-                < !--Descrição do Produto-- >
-                < Label Text = "Descrição do Produto:"
-                       FontSize = "18" />
-                < Editor x: Name = "DescricaoEditor"
-                        Placeholder = "Digite a descrição do produto"
-                        BackgroundColor = "#E0E0E0"
-                        HeightRequest = "100" />
+                <!-- Matéria Prima -->
+                <StackLayout Orientation="Horizontal" Margin="20,20,0,0">
+                    <Label Text="MATÉRIA PRIMA:" VerticalOptions="Center" FontSize="Medium" />
+                    <ImageButton Source="add_icon.png" HorizontalOptions="EndAndExpand" />
+                </StackLayout>
 
-                < !--Matéria Prima-- >
-                < Label Text = "Matéria Prima:"
-                       FontSize = "18" />
-                < StackLayout Orientation = "Horizontal"
-                             VerticalOptions = "Center"
-                             Spacing = "10" >
-                    < Entry x: Name = "MateriaPrimaEntry"
-                           Placeholder = "Selecione a matéria prima"
-                           BackgroundColor = "#E0E0E0"
-                           HeightRequest = "40"
-                           HorizontalOptions = "FillAndExpand" />
-                    < Button Text = "+"
-                            WidthRequest = "40"
-                            HeightRequest = "40"
-                            BackgroundColor = "Transparent"
-                            ImageSource = "add_icon.png" />
-                </ StackLayout >
+                <!-- Produto -->
+                <Label Text="PRODUTO:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Entry Placeholder="Produto" />
 
-                < !--Produto-- >
-                < Label Text = "Produto:"
-                       FontSize = "18" />
-                < Entry x: Name = "ProdutoEntry"
-                       Placeholder = "Digite o nome do produto"
-                       BackgroundColor = "#E0E0E0"
-                       HeightRequest = "40" />
+                <!-- Quantidade -->
+                <Label Text="QUANTIDADE:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Entry Placeholder="Quantidade" />
 
-                < !--Quantidade-- >
-                < Label Text = "Quantidade:"
-                       FontSize = "18" />
-                < Entry x: Name = "QuantidadeEntry"
-                       Placeholder = "Digite a quantidade"
-                       Keyboard = "Numeric"
-                       BackgroundColor = "#E0E0E0"
-                       HeightRequest = "40" />
+                <!-- Tecido -->
+                <Label Text="TECIDO:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Entry Placeholder="Tecido" />
 
-                < !--Tecido-- >
-                < Label Text = "Tecido:"
-                       FontSize = "18" />
-                < Entry x: Name = "TecidoEntry"
-                       Placeholder = "Digite o tipo de tecido"
-                       BackgroundColor = "#E0E0E0"
-                       HeightRequest = "40" />
+                <!-- Valor -->
+                <StackLayout Orientation="Horizontal" Margin="20,20,0,0">
+                    <Label Text="VALOR:" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry Placeholder="Valor" WidthRequest="150" />
+                </StackLayout>
 
-                < !--Valor-- >
-                < Label Text = "Valor:"
-                       FontSize = "18" />
-                < Entry x: Name = "ValorEntry"
-                       Placeholder = "Digite o valor"
-                       Keyboard = "Numeric"
-                       BackgroundColor = "#E0E0E0"
-                       HeightRequest = "40" />
+                <!-- Botão Cadastrar -->
+                <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" Margin="0,30,0,0">
+                    <Button Text="CADASTRAR" HorizontalOptions="CenterAndExpand" />
+                    <ImageButton Source="save_icon.png" HorizontalOptions="EndAndExpand" />
+                </StackLayout>
 
-                < !--Botão Cadastrar-- >
-                < Button Text = "Cadastrar"
-                        x: Name = "CadastrarButton"
-                        BackgroundColor = "#2196F3"
-                        TextColor = "White"
-                        HeightRequest = "50"
-                        CornerRadius = "10"
-                        Clicked = "CadastrarButton_Clicked" />
-
-            </ StackLayout >
-        </ ScrollView >
-    </ ContentPage.Content >
-</ ContentPage >
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

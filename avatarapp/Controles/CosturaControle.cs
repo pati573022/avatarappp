@@ -1,6 +1,5 @@
 
-using LiteDB;
-
+using avatarapp.Modelos;
 
 namespace Controles;
 
@@ -26,7 +25,7 @@ public class CosturaControle : BaseControle
   public virtual List<Costura>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Costura>(NomeDaTabela);
-    return new List<Costura>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Costura>(tabela.FindAll().OrderBy(d => d.quantidade));
   }
 
   //----------------------------------------------------------------------------

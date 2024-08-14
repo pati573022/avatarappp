@@ -1,4 +1,4 @@
-namespace avatarapp;
+namespace avatarapp.Modelos;
  
    public class Registro
    {

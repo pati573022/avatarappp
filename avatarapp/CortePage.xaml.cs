@@ -3,9 +3,9 @@ using System;
 
 namespace avatarapp
 {
-    public partial class CadastroCortePage : ContentPage
+    public partial class CortePage : ContentPage
     {
-        public CadastroCortePage()
+        public CortePage()
         {
             InitializeComponent();
         }

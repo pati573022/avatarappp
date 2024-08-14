@@ -3,9 +3,9 @@ using Microsoft.Maui.Controls;
 
 namespace YourNamespace
 {
-    public partial class CadastroProdutoPage : ContentPage
+    public partial class BuscarFornecedorPage : ContentPage
     {
-        public CadastroProdutoPage()
+        public BuscarFornecedorPage()
         {
             InitializeComponent();
         }

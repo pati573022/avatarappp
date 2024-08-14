@@ -1,6 +1,6 @@
 using LiteDB;
 
-namespace avatarapp;
+namespace avatarapp.Modelos;
 
 public class Corte : Registro
 {

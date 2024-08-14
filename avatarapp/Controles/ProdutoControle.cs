@@ -1,5 +1,5 @@
 
-using LiteDB;
+using avatarapp.Modelos;
 
 namespace Controles;
 
@@ -38,7 +38,7 @@ public class ProdutoControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Produto produto)
+  public virtual void CriarOuAtualizar(Produto Produto)
   {
     var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
     collection.Upsert(produto);

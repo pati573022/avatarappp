@@ -1,5 +1,4 @@
-using LiteDB;
-
+using avatarapp.Modelos;
 namespace Controles;
 
 public class PedidoControle : BaseControle

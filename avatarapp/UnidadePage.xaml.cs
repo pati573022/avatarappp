@@ -3,9 +3,9 @@ using System;
 
 namespace avatarapp
 {
-    public partial class CadastroUnidade : ContentPage
+    public partial class UnidadePage : ContentPage
     {
-        public CadastroUnidade()
+        public UnidadePage()
         {
             InitializeComponent();
         }

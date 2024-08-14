@@ -1,6 +1,5 @@
 using LiteDB;
-
-namespace avatarapp;
+namespace avatarapp.Modelos;
 
 public class Produto : Registro
 {

@@ -1,5 +1,4 @@
-using LiteDB;
-
+using avatarapp.Modelos;
 namespace Controles;
 
 public class CorteControle : BaseControle
@@ -24,7 +23,7 @@ public class CorteControle : BaseControle
   public virtual List<Corte>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Corte>(NomeDaTabela);
-    return new List<Corte>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Corte>(tabela.FindAll().OrderBy(d => d.quantidade));
   }
 
   //----------------------------------------------------------------------------

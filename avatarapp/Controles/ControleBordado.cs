@@ -1,4 +1,4 @@
- using LiteDB;
+using avatarapp.Modelos;
 
 namespace Controles;
 
@@ -24,7 +24,7 @@ public class ControleBordado : BaseControle
   public virtual List<Bordado>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Bordado>(NomeDaTabela);
-    return new List<Bordado>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Bordado>(tabela.FindAll().OrderBy(d => d.quantidade));
   }
 
   //----------------------------------------------------------------------------

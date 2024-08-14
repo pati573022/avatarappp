@@ -3,9 +3,9 @@ using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
-    public partial class CadastroBordadoPage : ContentPage
+    public partial class BordadoPage : ContentPage
     {
-        public CadastroBordadoPage()
+        public BordadoPage()
         {
             InitializeComponent();
         }

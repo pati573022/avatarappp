@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="avatarapp.BuscarFornecedorPage"
-             Title="Buscar Fornecedor">
+             x:Class="YourNamespace.BuscarFornecedorPage">
 
-    <ContentPage.Content>
-        <Frame CornerRadius="20" Padding="20" BackgroundColor="White" HasShadow="True" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Center">
-            <StackLayout Spacing="20">
-                <Label Text="Buscar Fornecedor" FontAttributes="Bold" FontSize="Title" HorizontalOptions="Center" />
-                
-                <Label Text="BUSCAR:" FontAttributes="Bold" />
+    <StackLayout Padding="20">
+        <Frame BackgroundColor="White" CornerRadius="20" HasShadow="True">
+            <StackLayout Padding="10">
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
+                <!-- Título -->
+                <Label Text="Buscar Fornecedor"
+                       FontSize="Large"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
 
-                    <Entry x:Name="SearchEntry" Placeholder="Digite o nome do fornecedor" />
+                <!-- Campo de Busca -->
+                <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Text="BUSCAR:"
+                           VerticalOptions="Center"
+                           FontSize="Medium" />
+                    <Entry Placeholder="Digite aqui"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10,0" />
+                    <ImageButton Source="search_icon.png"
+                                 VerticalOptions="Center" />
+                </StackLayout>
 
-                    <ImageButton Source="search_icon.png" Grid.Column="1" Clicked="OnSearchButtonClicked" />
-                </Grid>
-
-                <!-- Botões de resultado -->
-                <Button Text="Resultado 1" Style="{StaticResource ButtonStyle}" />
-                <Button Text="Resultado 2" Style="{StaticResource ButtonStyle}" />
-                <Button Text="Resultado 3" Style="{StaticResource ButtonStyle}" />
-                <Button Text="Resultado 4" Style="{StaticResource ButtonStyle}" />
-                <Button Text="Resultado 5" Style="{StaticResource ButtonStyle}" />
-                <Button Text="Resultado 6" Style="{StaticResource ButtonStyle}" />
-                <Button Text="Resultado 7" Style="{StaticResource ButtonStyle}" />
-                <Button Text="Resultado 8" Style="{StaticResource ButtonStyle}" />
-
+                <!-- Botões de Opção -->
+                <StackLayout Margin="0,20,0,0">
+                    <Button Text="Opção 1" />
+                    <Button Text="Opção 2" Margin="0,10,0,0" />
+                    <Button Text="Opção 3" Margin="0,10,0,0" />
+                    <Button Text="Opção 4" Margin="0,10,0,0" />
+                    <Button Text="Opção 5" Margin="0,10,0,0" />
+                    <Button Text="Opção 6" Margin="0,10,0,0" />
+                    <Button Text="Opção 7" Margin="0,10,0,0" />
+                </StackLayout>
             </StackLayout>
         </Frame>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>
+

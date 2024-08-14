@@ -1,5 +1,4 @@
-using LiteDB;
-
+using avatarapp.Modelos;
 namespace Controles;
 
 public class ControleFornecedor : BaseControle
@@ -16,7 +15,7 @@ public class ControleFornecedor : BaseControle
   public virtual Registro? Ler(int idFornecedor)
   {
     var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idFornecedor);
+    return collection.FindOne(d => d.id == idFornecedor);
   }
 
   //----------------------------------------------------------------------------
@@ -24,7 +23,7 @@ public class ControleFornecedor : BaseControle
   public virtual List<Fornecedor>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-    return new List<Fornecedor>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Fornecedor>(tabela.FindAll().OrderBy(d => d.nome));
   }
 
   //----------------------------------------------------------------------------
