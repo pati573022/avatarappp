@@ -23,7 +23,7 @@ public class PedidoControle : BaseControle
   public virtual List<Pedido>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Pedido>(NomeDaTabela);
-    return new List<Pedido>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Pedido>(tabela.FindAll().OrderBy(d => d.quantidade));
   }
 
   //----------------------------------------------------------------------------

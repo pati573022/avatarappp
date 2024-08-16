@@ -8,7 +8,7 @@ public class Pedido : Registro
     public string nome {get;set;}
 
      [BsonId]
-   public  int id {get;set;}
+   public int Id {get;set;}
    public int quantidade {get;set;}
    public decimal valor {get;set;}
    public decimal desconto {get;set;}

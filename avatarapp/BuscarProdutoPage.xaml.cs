@@ -1,11 +1,10 @@
-using System;
 using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
-    public partial class BuscarFornecedorPage : ContentPage
+    public partial class BuscaProdutoPage : ContentPage
     {
-        public BuscarFornecedorPage()
+        public BuscaProdutoPage()
         {
             InitializeComponent();
         }

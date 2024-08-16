@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarCosturaPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="30"
+            BackgroundColor="White">
+
+            <Frame 
+                CornerRadius="20"
+                BorderColor="Black"
+                Padding="20"
+                BackgroundColor="White">
+
+                <VerticalStackLayout>
+                    <Label
+                        Text="Buscar Costura"
+                        FontSize="Large"
+                        HorizontalOptions="Center" 
+                        TextColor="Black" />
+
+                    <StackLayout 
+                        Orientation="Horizontal"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Center">
+
+                        <Label
+                            Text="BUSCAR:"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start" />
+
+                        <Entry 
+                            Placeholder=""
+                            HorizontalOptions="FillAndExpand"
+                            HeightRequest="40"/>
+
+                        <ImageButton
+                            Source="search_icon.png"
+                            WidthRequest="40"
+                            HeightRequest="40"
+                            BackgroundColor="Transparent"/>
+                    </StackLayout>
+
+                    <VerticalStackLayout Spacing="10">
+                        <Button 
+                            Text=""
+                            HeightRequest="50"
+                            WidthRequest="200"
+                            HorizontalOptions="Center"/>
+
+                        <Button 
+                            Text=""
+                            HeightRequest="50"
+                            WidthRequest="200"
+                            HorizontalOptions="Center"/>
+
+                        <Button 
+                            Text=""
+                            HeightRequest="50"
+                            WidthRequest="200"
+                            HorizontalOptions="Center"/>
+
+                        <Button 
+                            Text=""
+                            HeightRequest="50"
+                            WidthRequest="200"
+                            HorizontalOptions="Center"/>
+
+                        <Button 
+                            Text=""
+                            HeightRequest="50"
+                            WidthRequest="200"
+                            HorizontalOptions="Center"/>
+
+                        <Button 
+                            Text=""
+                            HeightRequest="50"
+                            WidthRequest="200"
+                            HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -15,7 +15,7 @@ public class ControleFornecedor : BaseControle
   public virtual Registro? Ler(int idFornecedor)
   {
     var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idFornecedor);
+    return collection.FindOne(d => d.Id == idFornecedor);
   }
 
   //----------------------------------------------------------------------------

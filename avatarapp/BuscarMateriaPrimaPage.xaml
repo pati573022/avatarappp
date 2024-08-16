@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.BuscarMateriaPrimaPage"
+             Title="Busca de Matéria Prima">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            
+            <!-- Título -->
+            <Label Text="Busca de Matéria Prima" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" />
+
+            <!-- Campo de Busca -->
+            <HorizontalStackLayout Spacing="10">
+                <Entry Placeholder="BUSCAR:"
+                       HorizontalOptions="FillAndExpand" />
+                <Image Source="icon_busca.png"
+                       WidthRequest="30"
+                       HeightRequest="30" />
+            </HorizontalStackLayout>
+
+            <!-- Botões (Placeholder) -->
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+            <Button Text=""
+                    HeightRequest="50"
+                    BackgroundColor="LightGray" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

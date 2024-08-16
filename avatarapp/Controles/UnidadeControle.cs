@@ -24,7 +24,7 @@ public class UnidadeControle : BaseControle
   public virtual List<Unidade>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Unidade>(NomeDaTabela);
-    return new List<Unidade>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Unidade>(tabela.FindAll().OrderBy(d => d.nome));
   }
 
   //----------------------------------------------------------------------------

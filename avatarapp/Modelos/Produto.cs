@@ -6,7 +6,7 @@ public class Produto : Registro
    public string nome;
 
     [BsonId]
-   public int id {get;set;}
+   public int Id {get;set;}
      public string descricaodoproduto {get;set;}
 
 }

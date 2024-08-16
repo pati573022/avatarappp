@@ -5,7 +5,7 @@ namespace avatarapp.Modelos;
 public class Estoque : Registro
 {
      [BsonId]
-    public int id {get;set;}
+    public int Id {get;set;}
     public string descricaodoproduto {get;set;}
 
    public string quantidade {get;set;}

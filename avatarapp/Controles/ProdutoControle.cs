@@ -25,7 +25,7 @@ public class ProdutoControle : BaseControle
   public virtual List<Produto>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Produto>(NomeDaTabela);
-    return new List<Produto>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Produto>(tabela.FindAll().OrderBy(d => d.nome));
   }
 
   //----------------------------------------------------------------------------
@@ -38,7 +38,7 @@ public class ProdutoControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Produto Produto)
+  public virtual void CriarOuAtualizar(Produto produto)
   {
     var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
     collection.Upsert(produto);

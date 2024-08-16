@@ -24,7 +24,7 @@ public class EstoqueControle : BaseControle
   public virtual List<Estoque>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Estoque>(NomeDaTabela);
-    return new List<Estoque>(tabela.FindAll().OrderBy(d => d.));
+    return new List<Estoque>(tabela.FindAll().OrderBy(d => d.quantidade));
   }
 
   //----------------------------------------------------------------------------
