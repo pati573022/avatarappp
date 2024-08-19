@@ -1,15 +1,15 @@
 using System;
 using Microsoft.Maui.Controls;
 
-namespace avatarapp
-{
+namespace avatarapp;
+
     public partial class BuscarBordadoPage : ContentPage
     {
-        public BuscarBoradoPage()
+        public BuscarBordadoPage()
         {
             InitializeComponent();
         }
         
-        // Event handlers can be added here, if needed.
+       
     }
-}
+
