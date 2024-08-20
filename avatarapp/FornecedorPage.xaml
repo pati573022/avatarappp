@@ -6,8 +6,8 @@
 
     <ContentPage.Content>
         <StackLayout Padding="20"
-                     VerticalOptions="Center"
-                     HorizontalOptions="Center">
+                     VerticalOptions="Fill"
+                     HorizontalOptions="Fill">
                      
             <Frame BorderColor="Black"
                    CornerRadius="20"
@@ -25,29 +25,26 @@
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
                            
-                    <Entry Placeholder="Digite o nome"
+                    <Entry x:Name= "NomeEntry" Placeholder="Digite o nome do fornecedor"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 
-                    <Label Text="Telefone:"
-                           FontAttributes="Bold"
-                           Margin="0,10,0,0"/>
-                           
-                    <Entry Placeholder="Digite o telefone"
-                           BackgroundColor="#e0e0e0"
-                           HeightRequest="40"/>
 
                     <Label Text="CNPJ:"
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
                            
-                    <Entry Placeholder="Digite o CNPJ"
+                    <Entry x:Name= "CnpjEntry" Placeholder="Digite o CNPJ"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 
                     <Label Text="Matéria Prima:"
                            FontAttributes="Bold"
-                           Margin="0,10,0,0"/>
+                           Margin="0,10,0,0"/>  
+
+                  <Entry x:Name= "materiaPrimaEntry" Placeholder="Digite a materiaPrima"
+                           BackgroundColor="#e0e0e0"
+                           HeightRequest="40"/>
                            
                     <Grid>
                         <Grid.ColumnDefinitions>

@@ -1,9 +1,13 @@
+using avatarapp.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
     public partial class MateriaPrimaPage : ContentPage
     {
+         public MateriaPrima materiaprima { get; set; }
+        Controles.MateriaPrimaControle materiaprimaControle = new Controles.MateriaPrimaControle();
+
         public MateriaPrimaPage()
         {
             InitializeComponent();
@@ -20,5 +24,30 @@ namespace avatarapp
             // Lógica para cancelar e limpar os campos ou fechar a página
             DisplayAlert("Cancelado", "Operação cancelada.", "OK");
         }
+         protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (materiaprima != null)
+            {
+                //IdLabel.Text        = cliente.Id.ToString();
+                NomeEntry.Text = materiaprima.nome;
+                UnidadedemedidaEntry.Text = materiaprima.unidadedemedida;
+               
+            }
+        }
+          private async void OnSalvarDadosClicked(object sender, EventArgs e)
+        {
+
+            var cliente = new Modelos.MateriaPrima();
+
+            materiaprima.Id = 0;
+            materiaprima.nome = NomeEntry.Text;
+            materiaprima.unidadedemedida = UnidadedemedidaEntry.Text;
+            materiaprimaControle.CriarOuAtualizar(materiaprima);
+
+            await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
+            
+     }       
     }
 }

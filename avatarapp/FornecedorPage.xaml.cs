@@ -1,10 +1,17 @@
+using avatarapp.Modelos;
 using Microsoft.Maui.Controls;
+
 
 namespace avatarapp
 {
     public partial class FornecedorPage : ContentPage
     {
+        public Fornecedor fornecedor { get; set; }
+        Controles.ControleFornecedor fornecedorControle = new Controles.ControleFornecedor();
+
+
         public FornecedorPage()
+
         {
             InitializeComponent();
         }
@@ -37,6 +44,32 @@ namespace avatarapp
         {
             // Logic for refresh action
             DisplayAlert("Info", "Página atualizada!", "OK");
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (fornecedor != null)
+            {
+                //IdLabel.Text        = cliente.Id.ToString();
+                NomeEntry.Text = fornecedor.nome;
+                materiaPrimaEntry.Text = fornecedor.materiaPrima;
+                CnpjEntry.Text = fornecedor.cnpj;
+
+            }
+        }
+
+        private async void OnSalvarDadosClicked(object sender, EventArgs e)
+        {
+
+            var cliente = new Modelos.Fornecedor();
+
+            fornecedor.Id = 0;
+            fornecedor.nome = NomeEntry.Text;
+            fornecedor.materiaPrima = materiaPrimaEntry.Text;
+            fornecedorControle.CriarOuAtualizar(fornecedor);
+
+            await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
         }
     }
 }

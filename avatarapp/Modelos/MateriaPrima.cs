@@ -8,7 +8,7 @@ public class MateriaPrima : Registro
 
     [BsonId]
    public int Id {get;set;}
-    string unidadedemedida {get;set;}
+    public string unidadedemedida {get;set;}
     
     
    

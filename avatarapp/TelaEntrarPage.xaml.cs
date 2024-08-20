@@ -1,3 +1,4 @@
+using avatarapp.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace avatarapp
@@ -8,10 +9,25 @@ namespace avatarapp
         {
             InitializeComponent();
         }
-        private void Volta (object sender, EventArgs e)
+        private void Volta(object sender, EventArgs e)
         {
-        Application.Current.MainPage = new ClientePage ();
+            Application.Current.MainPage = new ClientePage();
         }
-    }   
+
+        private void FornecedorClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new FornecedorPage();
+        }  
+
+        
+        private void MateriaPrimaClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new MateriaPrimaPage();
+        }
+    }
+
+}
+        
     
-}   
+
+

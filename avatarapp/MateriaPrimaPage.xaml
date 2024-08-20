@@ -31,15 +31,19 @@
             <Label Text="Nome:"
                    Grid.Row="1"
                    VerticalOptions="Center"/>
-            <Entry Placeholder="Nome do produto"
+            <Entry x:Name= "NomeEntry" Placeholder="digite o nome da materiaprima"
                    Grid.Row="1"
                    Margin="0,0,0,10"
                    BackgroundColor="#D3D3D3"/>
 
             <!-- Unidade Field -->
-            <Label Text="Unidade do Produto:"
+            <Label Text="Unidadedemedida:"
                    Grid.Row="2"
                    VerticalOptions="Center"/>
+                   <Entry x:Name= "UnidadedemedidaEntry" Placeholder="digite o nome"
+                   Grid.Row="1"
+                   Margin="0,0,0,10"
+                   BackgroundColor="#D3D3D3"/>
             <Picker Title="Unidade:"
                     Grid.Row="2"
                     Margin="0,0,0,10"

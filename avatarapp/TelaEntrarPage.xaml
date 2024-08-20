@@ -18,10 +18,12 @@
 
             <Button Text="CLIENTE"
             Clicked= "Volta"/>
-            <Button Text="FORNECEDOR"/>
+            <Button Text="FORNECEDOR"
+            Clicked="FornecedorClicked"/>
             <Button Text="PEDIDO"/>
             <Button Text="PRODUTO"/>
-            <Button Text="MATERIA PRIMA"/>
+            <Button Text="MATERIA PRIMA"
+            Clicked= "MateriaPrimaClicked"/>
             <Button Text="UNIDADE"/>
             <Button Text="CORTE"/>
             <Button Text="COSTURA"/>
