@@ -1,9 +1,14 @@
+using avatarapp.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace avatarapp
 {
     public partial class PedidoPage : ContentPage
     {
+
+        public Pedido pedido { get; set; }
+        Controles.PedidoControle pedidoControle = new Controles.PedidoControle();
+
         public PedidoPage()
         {
             InitializeComponent();
@@ -26,5 +31,45 @@ namespace avatarapp
             // Logic for refresh action
             DisplayAlert("Info", "Página atualizada!", "OK");
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (pedido != null)
+            {
+
+                QuantidadeEntry.Text = pedido.quantidade.ToString();
+
+                ValorEntry.Text = pedido.valor.ToString();
+                DescontoEntry.Text = pedido.desconto.ToString();
+                PrazoEntry.Text = pedido.prazo;
+                ModelodeMarcaEntry.Text = pedido.modelodemarca;
+
+            }
+
+        }
+
+
+
+        private async void OnSalvarDadosClicked(object sender, EventArgs e)
+        {
+
+            var cliente = new Modelos.Pedido();
+
+            pedido.Id = 0;
+            pedido.quantidade = int.Parse(QuantidadeEntry.Text);
+            pedido.valor = decimal.Parse(ValorEntry.Text);
+            pedido.desconto = decimal.Parse(DescontoEntry.Text);
+            pedido.prazo = PrazoEntry.Text;
+            pedido.modelodemarca = ModelodeMarcaEntry.Text;
+
+            pedidoControle.CriarOuAtualizar(pedido);
+
+            await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
+
+
+
+        }
     }
 }
+

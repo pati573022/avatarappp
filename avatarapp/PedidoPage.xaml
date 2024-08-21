@@ -6,8 +6,8 @@
 
     <ContentPage.Content>
         <StackLayout Padding="20"
-                     VerticalOptions="Center"
-                     HorizontalOptions="Center">
+                     VerticalOptions="Fill"
+                     HorizontalOptions="Fill">
                      
             <Frame BorderColor="Black"
                    CornerRadius="20"
@@ -32,42 +32,42 @@
                     <Label Text="Quantidade:"
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
-                    <Entry Placeholder="Digite a quantidade"
+                    <Entry x:Name="QuantidadeEntry" Placeholder="Digite a quantidade"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 
                     <Label Text="Valor:"
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
-                    <Entry Placeholder="Digite o valor"
+                    <Entry x:Name="ValorEntry" Placeholder="Digite o valor"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 
                     <Label Text="Desconto:"
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
-                    <Entry Placeholder="Digite o desconto"
+                    <Entry x:Name="DescontoEntry" Placeholder="Digite o desconto"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 
                     <Label Text="Prazo:"
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
-                    <Entry Placeholder="Digite o prazo"
+                    <Entry x:Name="PrazoEntry" Placeholder="Digite o prazo"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 
                     <Label Text="Modelo/Marca:"
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
-                    <Entry Placeholder="Digite o modelo/marca"
+                    <Entry x:Name="ModelodeMarcaEntry" Placeholder="Digite o modelodemarca"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 
                     <Label Text="Total:"
                            FontAttributes="Bold"
                            Margin="0,10,0,0"/>
-                    <Entry Placeholder="Digite o total"
+                    <Entry x:Name="TotalEntry" Placeholder="Digite o total"
                            BackgroundColor="#e0e0e0"
                            HeightRequest="40"/>
 

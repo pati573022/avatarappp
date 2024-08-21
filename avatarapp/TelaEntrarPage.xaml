@@ -20,7 +20,8 @@
             Clicked= "Volta"/>
             <Button Text="FORNECEDOR"
             Clicked="FornecedorClicked"/>
-            <Button Text="PEDIDO"/>
+            <Button Text="PEDIDO"
+            Clicked="PedidoClicked"/>
             <Button Text="PRODUTO"/>
             <Button Text="MATERIA PRIMA"
             Clicked= "MateriaPrimaClicked"/>

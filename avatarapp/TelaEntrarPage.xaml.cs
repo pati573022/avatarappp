@@ -20,13 +20,23 @@ namespace avatarapp
         }  
 
         
+        private void PedidoClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new PedidoPage();
+        }
+
         private void MateriaPrimaClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MateriaPrimaPage();
         }
+        
     }
 
 }
+    
+
+
+ 
         
     
 
