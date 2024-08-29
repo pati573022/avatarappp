@@ -29,7 +29,10 @@ namespace avatarapp
         {
             Application.Current.MainPage = new MateriaPrimaPage();
         }
-        
+          private void EstoqueClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new EstoquePage();
+        }
     }
 
 }

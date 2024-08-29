@@ -6,8 +6,8 @@
 
 
     <ScrollView>
-        <StackLayout VerticalOptions="CenterAndExpand"
-                     HorizontalOptions="CenterAndExpand"
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
                      Padding="20"
                      Spacing="20">
             
@@ -29,7 +29,9 @@
             <Button Text="CORTE"/>
             <Button Text="COSTURA"/>
             <Button Text="BORDADO"/>
-            <Button Text="ESTOQUE"/>
+            <Button Text="ESTOQUE"
+            Clicked="EstoqueClicked"/>
+            
 
         </StackLayout>
     </ScrollView>

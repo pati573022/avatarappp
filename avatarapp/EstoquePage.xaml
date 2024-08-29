@@ -5,7 +5,7 @@
              Title="Cadastro do Estoque"
              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="Fill" VerticalOptions="Start">
             <Label Text="Cadastro do Estoque"
                    FontSize="24"
                    FontAttributes="Bold"
