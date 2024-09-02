@@ -33,7 +33,7 @@
                    VerticalOptions="Center"
                    Grid.Column="0"/>
 
-            <Entry Placeholder="Nome da unidade"
+            <Entry x:Name= "NomeEntry" Placeholder="Digite o nome do cliente"
                    Grid.Row="1"
                    Grid.Column="0"
                    Margin="0,0,10,10"

@@ -1,10 +1,14 @@
 using Microsoft.Maui.Controls;
 using System;
+using avatarapp.Modelos;
 
 namespace avatarapp
 {
     public partial class CortePage : ContentPage
     {
+          public Corte corte { get; set; }
+        Controles.CorteControle corteControle = new Controles.CorteControle();
+
         public CortePage()
         {
             InitializeComponent();
@@ -23,5 +27,7 @@ namespace avatarapp
 
             DisplayAlert("Cadastro", "Dados cadastrados com sucesso!", "OK");
         }
-    }
-}
+      
+                }
+                  }
+

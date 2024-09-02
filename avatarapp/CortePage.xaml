@@ -10,16 +10,16 @@
             <Picker x:Name="ClientePicker" />
             <Label Text="Produto:" />
             <Picker x:Name="ProdutoPicker" />
-            <Entry x:Name="ProdutoEntry" Placeholder="Produto" />
+            <Entry x:Name="ProdutoEntry" Placeholder="Digite o nome do produto" />
 
             <Label Text="Quantidade:" />
-            <Entry x:Name="QuantidadeEntry" Keyboard="Numeric" Placeholder="Quantidade" />
+            <Entry x:Name="QuantidadeEntry" Keyboard="Numeric" Placeholder=" Digite a quantidade" />
 
             <Label Text="Entrada:" />
-            <Entry x:Name="EntradaEntry" Placeholder="Entrada" />
+            <Entry x:Name="EntradaEntry" Placeholder=" Digite a entrada" />
 
             <Label Text="Prazo:" />
-            <Entry x:Name="PrazoEntry" Placeholder="Prazo" />
+            <Entry x:Name="PrazoEntry" Placeholder=" Digite o Prazo" />
 
             <Button Text="Cadastrar" Clicked="OnCadastrarClicked" BackgroundColor="LightBlue" />
         </StackLayout>

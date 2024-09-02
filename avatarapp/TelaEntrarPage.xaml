@@ -22,10 +22,12 @@
             Clicked="FornecedorClicked"/>
             <Button Text="PEDIDO"
             Clicked="PedidoClicked"/>
-            <Button Text="PRODUTO"/>
+            <Button Text="PRODUTO"
+            Clicked="ProdutoClicked"/>
             <Button Text="MATERIA PRIMA"
             Clicked= "MateriaPrimaClicked"/>
-            <Button Text="UNIDADE"/>
+            <Button Text="UNIDADE"
+            Clicked="UnidadeClicked"/>
             <Button Text="CORTE"/>
             <Button Text="COSTURA"/>
             <Button Text="BORDADO"/>

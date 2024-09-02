@@ -15,14 +15,15 @@
             <Label Text="Produto:" />
             <StackLayout Orientation="Horizontal">
                 <Picker x:Name="ProdutoPicker" Title="Selecione o Produto" HorizontalOptions="FillAndExpand" />
-                <Entry x:Name="ProdutoEntry" WidthRequest="50" />
+                <Entry x:Name="ProdutoEntry" Placeholder="Selecione o Produto" WidthRequest="50" />
             </StackLayout>
 
             <Label Text="Quantidade:" />
-            <Entry x:Name="QuantidadeEntry" Keyboard="Numeric" />
+            <Entry x:Name="QuantidadeEntry" Placeholder="Selecione a Quantidade" Keyboard="Numeric" />
 
             <Label Text="Entrada:" />
-            <DatePicker x:Name="EntradaDatePicker" />
+            <DatePicker x:Name="EntradaDatePicker"  />
+            
 
             <Label Text="Prazo:" />
             <DatePicker x:Name="PrazoDatePicker" />

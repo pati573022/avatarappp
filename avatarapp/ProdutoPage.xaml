@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YourNamespace.CadastroProdutoPage">
+             x:Class="avatarapp.CadastroProdutoPage">
 
-    <StackLayout Padding="20">
+    <StackLayout Padding="0">
         <Frame BackgroundColor="White" CornerRadius="20" HasShadow="True">
-            <StackLayout Padding="10">
+            <StackLayout Padding="0">
 
                 <!-- Título -->
                 <Label Text="Cadastro do Produto"
                        FontSize="Large"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center" />
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Fill" />
 
                 <!-- Nome do Produto -->
-                <Label Text="NOME:" VerticalOptions="Center" FontSize="Medium" />
-                <Entry Placeholder="Nome do produto" />
+                <Label Text="Nome:" VerticalOptions="Center" FontSize="Medium" />
+                <Entry Placeholder="Nome do produto" 
+                x:Name="NomeEntry"/>
 
                 <!-- Descrição do Produto -->
-                <Label Text="DESCRIÇÃO DO PRODUTO:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
-                <Entry Placeholder="Descrição do produto" />
+                <Label Text="Descricao do Produto:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Entry Placeholder="Descriçãodoproduto"
+                x:Name="descricaodoprodutoEntry"/>
 
                 <!-- Matéria Prima -->
                 <StackLayout Orientation="Horizontal" Margin="20,20,0,0">
@@ -28,26 +30,26 @@
                 </StackLayout>
 
                 <!-- Produto -->
-                <Label Text="PRODUTO:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Label Text="Produto:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
                 <Entry Placeholder="Produto" />
 
                 <!-- Quantidade -->
-                <Label Text="QUANTIDADE:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Label Text="Quantidade:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
                 <Entry Placeholder="Quantidade" />
 
                 <!-- Tecido -->
-                <Label Text="TECIDO:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
+                <Label Text="Tecido:" VerticalOptions="Center" FontSize="Medium" Margin="0,20,0,0" />
                 <Entry Placeholder="Tecido" />
 
                 <!-- Valor -->
                 <StackLayout Orientation="Horizontal" Margin="20,20,0,0">
-                    <Label Text="VALOR:" VerticalOptions="Center" FontSize="Medium" />
+                    <Label Text="Valor:" VerticalOptions="Center" FontSize="Medium" />
                     <Entry Placeholder="Valor" WidthRequest="150" />
                 </StackLayout>
 
                 <!-- Botão Cadastrar -->
                 <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" Margin="0,30,0,0">
-                    <Button Text="CADASTRAR" HorizontalOptions="CenterAndExpand" />
+                    <Button Text="Cadastrar" HorizontalOptions="CenterAndExpand" />
                     <ImageButton Source="save_icon.png" HorizontalOptions="EndAndExpand" />
                 </StackLayout>
 

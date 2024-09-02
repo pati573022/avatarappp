@@ -33,6 +33,16 @@ namespace avatarapp
         {
             Application.Current.MainPage = new EstoquePage();
         }
+
+            private void UnidadeClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new UnidadePage();
+        }
+
+             private void ProdutoClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new CadastroProdutoPage();
+        }
     }
 
 }
