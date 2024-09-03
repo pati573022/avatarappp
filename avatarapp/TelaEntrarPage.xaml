@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="avatarapp.TelaEntrarPage   "
-             Shell.NavBarIsVisible= "False">
+             Shell.NavBarIsVisible="False">
 
 
     <ScrollView>
@@ -10,30 +10,30 @@
                      HorizontalOptions="FillAndExpand"
                      Padding="20"
                      Spacing="20">
-            
-            <Label Text="ENTRAR" 
+
+            <Label Text="ENTRAR"
                    FontSize="24"
                    HorizontalOptions="Center"
                    FontAttributes="Bold"/>
 
             <Button Text="CLIENTE"
-            Clicked= "Volta"/>
+                    Clicked="Volta"/>
             <Button Text="FORNECEDOR"
-            Clicked="FornecedorClicked"/>
+                    Clicked="FornecedorClicked"/>
             <Button Text="PEDIDO"
-            Clicked="PedidoClicked"/>
+                    Clicked="PedidoClicked"/>
             <Button Text="PRODUTO"
-            Clicked="ProdutoClicked"/>
+                    Clicked="ProdutoClicked"/>
             <Button Text="MATERIA PRIMA"
-            Clicked= "MateriaPrimaClicked"/>
+                    Clicked="MateriaPrimaClicked"/>
             <Button Text="UNIDADE"
-            Clicked="UnidadeClicked"/>
+                    Clicked="UnidadeClicked"/>
             <Button Text="CORTE"/>
             <Button Text="COSTURA"/>
             <Button Text="BORDADO"/>
             <Button Text="ESTOQUE"
-            Clicked="EstoqueClicked"/>
-            
+                    Clicked="EstoqueClicked"/>
+
 
         </StackLayout>
     </ScrollView>

@@ -11,12 +11,12 @@ namespace avatarapp
         }
         private void Volta(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new ClientePage();
+            Application.Current.MainPage = new ListaClientesPage();
         }
 
         private void FornecedorClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new FornecedorPage();
+            Application.Current.MainPage = new ListaFornecedorPage();
         }  
 
         

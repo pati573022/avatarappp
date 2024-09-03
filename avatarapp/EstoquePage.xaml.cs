@@ -20,6 +20,15 @@ namespace avatarapp
             DisplayAlert("Success", "Estoque cadastrado com sucesso!", "OK");
         }
 
+          private void VoltarEstoqueClicked(object sender, EventArgs e)
+        {
+          Application.Current.MainPage= new TelaEntrarPage ();
+            // Logic for canceling registration
+            DisplayAlert("Cancelled", "Cadastro cancelado!", "OK");
+        }
+
+       
+
         private void OnRecycleClicked(object sender, EventArgs e)
         {
             // Logic for recycle action

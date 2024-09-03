@@ -45,6 +45,13 @@ namespace avatarapp
             // Logic for refresh action
             DisplayAlert("Info", "Página atualizada!", "OK");
         }
+
+           private void VoltarFornecedorClicked(object sender, EventArgs e)
+        {
+          Application.Current.MainPage= new TelaEntrarPage ();
+            // Logic for canceling registration
+            DisplayAlert("Cancelled", "Cadastro cancelado!", "OK");
+        }
         protected override void OnAppearing()
         {
             base.OnAppearing();

@@ -19,7 +19,7 @@ namespace avatarapp
             DisplayAlert("Success", "Cliente cadastrado com sucesso!", "OK");
         }
 
-        private void OnCancelButtonClicked(object sender, EventArgs e)
+        private void VoltarProdutoClicked(object sender, EventArgs e)
         {
             // Logic for canceling registration
             DisplayAlert("Cancelled", "Cadastro cancelado!", "OK");

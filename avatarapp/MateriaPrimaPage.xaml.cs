@@ -24,6 +24,13 @@ namespace avatarapp
             // Lógica para cancelar e limpar os campos ou fechar a página
             DisplayAlert("Cancelado", "Operação cancelada.", "OK");
         }
+
+          private void VoltarMateriaPrimaClicked(object sender, EventArgs e)
+        {
+          Application.Current.MainPage= new TelaEntrarPage ();
+            // Logic for canceling registration
+            DisplayAlert("Cancelled", "Cadastro cancelado!", "OK");
+        }
          protected override void OnAppearing()
         {
             base.OnAppearing();

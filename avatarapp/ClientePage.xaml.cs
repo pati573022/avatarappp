@@ -21,8 +21,9 @@ namespace avatarapp
             DisplayAlert("Success", "Cliente cadastrado com sucesso!", "OK");
         }
 
-        private void OnCancelButtonClicked(object sender, EventArgs e)
+        private void VoltarClienteClicked(object sender, EventArgs e)
         {
+          Application.Current.MainPage= new TelaEntrarPage ();
             // Logic for canceling registration
             DisplayAlert("Cancelled", "Cadastro cancelado!", "OK");
         }

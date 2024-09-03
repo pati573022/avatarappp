@@ -25,6 +25,13 @@ namespace avatarapp
             DisplayAlert("Cadastrar", "Unidade cadastrada com sucesso!", "OK");
         }
 
+         private void VoltarUnidadeClicked(object sender, EventArgs e)
+        {
+          Application.Current.MainPage= new TelaEntrarPage ();
+            // Logic for canceling registration
+            DisplayAlert("Cancelled", "Cadastro cancelado!", "OK");
+        }
+
         private void OnCancelarClicked(object sender, EventArgs e)
         {
             // Lógica para cancelar o cadastro

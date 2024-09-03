@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.ListaFornecedorPage"
+             BackgroundColor="LightBlue"
+             Title="Cadastrar fornecedor">
+  <VerticalStackLayout>
+  <Button Text="Criar Novo Fornecedor"
+          BackgroundColor="Orange"
+          FontSize="16"
+          TextColor="Black"
+          Clicked="NovoFornecedorClicked"/>
+    <ListView x:Name="ListaFornecedor"
+              HasUnevenRows="True"
+              ItemSelected="QuandoSelecionarUmItemNaLista"
+              HorizontalOptions="Fill"
+              VerticalOptions="Fill">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <VerticalStackLayout Padding="20"
+                                BackgroundColor="white">
+              <HorizontalStackLayout>
+                <Label Text="{Binding materiaPrima}"
+                      FontSize="20"/>
+                <Label Text="{Binding nome}"
+                      FontSize="20"
+                      Margin="10,0,0,0"/>
+              </HorizontalStackLayout>
+              <Label Text="{Binding cnpj}"
+                      FontSize="20"/>
+            </VerticalStackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </VerticalStackLayout>
+</ContentPage>
