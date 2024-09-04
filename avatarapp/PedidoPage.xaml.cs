@@ -6,12 +6,14 @@ namespace avatarapp
     public partial class PedidoPage : ContentPage
     {
 
+        Controles.ClienteControle clienteControle = new Controles.ClienteControle();
         public Pedido pedido { get; set; }
         Controles.PedidoControle pedidoControle = new Controles.PedidoControle();
 
         public PedidoPage()
         {
             InitializeComponent();
+            pickerCliente.ItemsSource = clienteControle.LerTodos();
         }
 
         private void OnRegisterButtonClicked(object sender, EventArgs e)

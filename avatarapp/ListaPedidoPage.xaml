@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avatarapp.ListaPedidoPage"
+             BackgroundColor="LightBlue"
+             Title="Cadastrar pedido">
+  <VerticalStackLayout>
+  <Button Text="Criar Novo Pedido"
+          BackgroundColor="Orange"
+          FontSize="16"
+          TextColor="Black"
+          Clicked="NovoPedidoClicked"/>
+    <ListView x:Name="ListaPedidos"
+              HasUnevenRows="True"
+              ItemSelected="QuandoSelecionarUmItemNaLista"
+              HorizontalOptions="Fill"
+              VerticalOptions="Fill">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <VerticalStackLayout Padding="20"
+                                BackgroundColor="Pink">
+              <HorizontalStackLayout>
+                <Label Text="{Binding Nome}"
+                      FontSize="20"/>
+                <Label Text="{Binding Quantidade}"
+                      FontSize="20"
+                      Margin="10,0,0,0"/>
+              </HorizontalStackLayout>
+              <Label Text="{Binding Valor}"
+                      FontSize="20"/>
+
+                <Label Text="{Binding Desconto}"
+                      FontSize="20"
+                      Margin="10,0,0,0"/>
+
+                    <Label Text="{Binding Prazo}"
+                      FontSize="20"
+                      Margin="10,0,0,0"/>
+
+                      <Label Text="{Binding ModelodeMarca}"
+                      FontSize="20"
+                      Margin="10,0,0,0"/>
+            </VerticalStackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </VerticalStackLayout>
+</ContentPage>

@@ -22,7 +22,7 @@ namespace avatarapp
         
         private void PedidoClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new PedidoPage();
+            Application.Current.MainPage = new ListaPedidoPage();
         }
 
         private void MateriaPrimaClicked(object sender, EventArgs e)
